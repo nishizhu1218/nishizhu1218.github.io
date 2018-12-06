@@ -104,6 +104,78 @@
         
           <section id="main">
   
+    <article id="post-软件工程" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/06/软件工程/" class="article-date">
+	  <time datetime="2018-12-06T14:56:12.005Z" itemprop="datePublished">December 6, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-mysql标准语句分类" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/12/06/mysql标准语句分类/">mysql标准语句分类</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/06/mysql标准语句分类/" class="article-date">
+	  <time datetime="2018-12-06T14:45:20.000Z" itemprop="datePublished">December 6, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">DDL：Data Define Language  定义数据</span><br><span class="line">	 CREATE/DROP/ALTER </span><br><span class="line">DML:Data Munipulate Language   操作数据</span><br><span class="line">			操作</span><br><span class="line">	 INSERT/DELETE/UPDATE</span><br><span class="line">DQL:Data Query Language   查询数据</span><br><span class="line">		 查询</span><br><span class="line">	 SELECT</span><br><span class="line">DCL：Data control Language 控制用户权限</span><br><span class="line">     GRANT（授权）某个人去管理某个数据库</span><br><span class="line">	 REVOKE(收权)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1.计算机存储字符</span><br><span class="line">（1）如何存储英文字符</span><br><span class="line">	ASCII（美国人发明）:总共128个，对所有的英文字符及其标点符号进行编码</span><br><span class="line">	HEllo -&gt;72102108108111</span><br><span class="line">	Latin-1(欧洲人发明)：总共有256个，兼容ASCII码，同时对欧洲符号进行了编码。MySQL默认使用这种编码。</span><br><span class="line">（2）如何存储中文字符</span><br><span class="line">	GB2312 对常用的6千多汉字进行了编码，兼容ASCII码</span><br><span class="line">	GBK 对2万多个汉字进行了编码，兼容GB2312</span><br><span class="line">	BIG5 台湾繁体字编码</span><br><span class="line">	Unicode 对世界上主流的语言常用的字符进行了编码，兼容了ASCII，不兼容GBK,GB2312，BIG5 等系列。</span><br><span class="line">		具体分为UTF-8、UTF-16、UTF-32等存储方案。</span><br><span class="line">（3）解决MySQL存储中文乱码</span><br><span class="line">	sql脚本文件存储的编码utf 8</span><br><span class="line">	客户端连接服务器端使用的编码为utf8</span><br><span class="line">	服务器端创建数据库存储使用的编码为utf8</span><br><span class="line">    2.MySQL中的列类型</span><br><span class="line">创建数据表的时候，指定的列可以存储的数据类型。</span><br><span class="line">CREATE TABLE book(bid   列类型)；</span><br><span class="line"></span><br><span class="line">（1）数值类型</span><br><span class="line">TINYINT  微整型，占1个字节  范围-128~127</span><br><span class="line">SMALLINT  小整型  占2个字节  范围-32768~32767</span><br><span class="line">INT  整型， 占4个字节  范围-2147483648~2147483647</span><br><span class="line">BIGINT  大整型，占8个字节</span><br><span class="line">FLOAT   单精度浮点型，占4个字节，范围3.4e38，范围比INT大得多，可能产生计算误差。</span><br><span class="line">DOUBLE  双精度浮点型，占8个字节，范围比BIGINT大得多</span><br><span class="line">DECIMAL  (M,D) 定点小数， 不会产生计算误差，M代表总的有效位数，D代表小数点后的有效位数</span><br><span class="line">BOOL 布尔型，只有两个结果 TRUE/1、FALSE/0  TRUE  FALSE不能添加引号；真正存储数据的时候，会使用TINYINT。</span><br><span class="line"></span><br><span class="line">（2）日期时间类型——必须添加引号</span><br><span class="line">DATE  日期型  &quot;2018-12-31&quot;</span><br><span class="line">TIME 时间型   &quot;14:22:30&quot;</span><br><span class="line">DATETIME 日期时间型  &quot;2018-12-31    14:22:30&quot;</span><br><span class="line">（3）字符串类型——必须添加引号</span><br><span class="line">VARCHAR(M)   变长字符串，不会产生空间浪费，操作速度相对较慢，M最大值是65535</span><br><span class="line">CHAR（M） 定长字符串，可能产生空间浪费，操作速度较快，M最大值是255；用于存储手机号码，身份证号等固定长度的字符。</span><br><span class="line">TEXT（M）大型变长字符串，最多存2G</span><br><span class="line">CREATE TABLE t1(</span><br><span class="line">	id  SMALLINT,</span><br><span class="line">	age  TINYINT,</span><br><span class="line">	commentCount INT,</span><br><span class="line">	price  DECIMAL(6,2),</span><br><span class="line">	phone  CHAR(11),</span><br><span class="line">	article  VARCHAR(8000),</span><br><span class="line">	pubTime  DATE</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-MYSQL基础知识" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -153,7 +225,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/12/06/hello-world/">Hello World</a>
+      <a class="article-title" href="/2018/12/06/hello-world/">Hello My Bolg</a>
     </h1>
   
 
@@ -162,7 +234,7 @@
     <div class="article-meta">
       
 	<a href="/2018/12/06/hello-world/" class="article-date">
-	  <time datetime="2018-12-06T13:53:32.798Z" itemprop="datePublished">December 6, 2018</time>
+	  <time datetime="2018-12-06T07:30:45.000Z" itemprop="datePublished">December 6, 2018</time>
 	</a>
 
        
@@ -170,16 +242,48 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">欢迎来到我的博客 这里有前端的很多知识，语句，MYSQL，HTML,CSS,JS.</span><br><span class="line">现在正在努力</span><br><span class="line">等我更新哦！！！</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
 
+<!-- Table of Contents -->
+
+  
+    <article id="post-查询mysql语句" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/12/01/查询mysql语句/">查询,约束mysql语句</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/01/查询mysql语句/" class="article-date">
+	  <time datetime="2018-12-01T07:53:24.000Z" itemprop="datePublished">December 1, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">列约束</span><br><span class="line">（1）主键约束——PRIMARY KEY</span><br><span class="line">（2）唯一约束——UNI</span><br><span class="line">（3）非空约束——NOT NULL</span><br><span class="line">声明了非空约束的列上不能插入null</span><br><span class="line">（4）默认值约束——DEFAULT</span><br><span class="line">可以使用DEFAULT 关键字声明默认值，有两种方式可以应用默认值</span><br><span class="line">INSERT INTO xz_laptop_family VALUES(40,&quot;苹果&quot;,DEFAULT);</span><br><span class="line">INSERT INTO xz_laptop_family VALUES()</span><br><span class="line">zhangsan@tedu.cn   123456</span><br><span class="line">chengliang@tedu.cn  123456</span><br><span class="line">（检查约束)——CHECK</span><br><span class="line">     检查约束可以对插入的数据进行检验</span><br><span class="line">CREATE TABLE student（</span><br><span class="line">age TINYINT(age&gt;=18 AND age&lt;=60)</span><br><span class="line"> ）;</span><br><span class="line">mysql不支持检查约束，会降低数据的插入速度。</span><br><span class="line">（6）外键约束——FOREIGN KEY</span><br><span class="line">声明了外键约束的列，取值必须在另一个表的主键列上出现过，列类型要保持一致，取值可以是NULL</span><br><span class="line">FOREIGN KEY(familyid)</span><br><span class="line">REFERENCEAS xz_laptop_family(fid)</span><br><span class="line">2.MySQL中的自增列</span><br><span class="line">auto_INCREMENT（increment）：自动增长，加入一个列声明了自增列，无需手动复制，直接设置为NULL，会获取当前的最大值，然后加1插入。</span><br><span class="line">注意：</span><br><span class="line">        自增列允许手动赋值</span><br><span class="line">        只适用于整数型的主键列上</span><br><span class="line">        sql中提供了两个模糊查询的字符</span><br><span class="line">% 可以匹配任意多个字符  &gt;=0</span><br><span class="line">_  可以匹配任意一个字符  =1</span><br><span class="line">注意：以上的这两个匹配不能和=使用，必须要使用LIKE关键字</span><br><span class="line">（9）分页查询</span><br><span class="line">     假如查询的结果集中有太多的数据，一次显示不完，可以分页显示</span><br><span class="line">需要有两个条件 ：当前的页码、每页的数据量</span><br><span class="line">SELECT * FROM emp LIMIT  start,count;</span><br><span class="line">start: 是一个数字，从结果集中的哪1条开始读取，第1条 称为0 </span><br><span class="line">count：是一个数字，最多读取的行数</span><br><span class="line">每页开始的算法</span><br><span class="line">start=(页码-1)*count</span><br><span class="line">假设每一页显示5条记录</span><br><span class="line">第一页：SELECT *FROM emp LIMIT 0,5;</span><br><span class="line">第二页：SELECT *FROM emp LIMIT 5,5;</span><br><span class="line">第三页：SELECT *FROM emp LIMIT 10,5;</span><br><span class="line">第四页：SELECT＊FROM emp LIMIT 15.5;</span><br><span class="line">假设每一页显示6条记录</span><br><span class="line">第一页：SELECT * FROM emp LIMIT 0,6;</span><br><span class="line">第二页:  SELECT * FROM emp LIMIT 6,6;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -203,7 +307,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/12/01/内涵段子/">内涵段子</a>
+      <a class="article-title" href="/2018/12/01/内涵段子/">每日一句毒鸡汤</a>
     </h1>
   
 
@@ -221,6 +325,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>在哪里跌倒就在哪里躺着</p>
+<p>吃的苦中苦，换来心中堵</p>
 
       
     </div>
@@ -342,6 +447,30 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2018/12/06/软件工程/">(no title)</a></h6>
+              <span>December 6, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/12/06/mysql标准语句分类/">mysql标准语句分类</a></h6>
+              <span>December 6, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2018/12/06/MYSQL基础知识/">mysql基础知识</a></h6>
               <span>December 6, 2018</span>
             </div>
@@ -354,7 +483,7 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2018/12/06/hello-world/">Hello World</a></h6>
+              <h6 style="margin: 0;"><a href="/2018/12/06/hello-world/">Hello My Bolg</a></h6>
               <span>December 6, 2018</span>
             </div>
 
@@ -366,7 +495,19 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2018/12/01/内涵段子/">内涵段子</a></h6>
+              <h6 style="margin: 0;"><a href="/2018/12/01/查询mysql语句/">查询,约束mysql语句</a></h6>
+              <span>December 1, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/12/01/内涵段子/">每日一句毒鸡汤</a></h6>
               <span>December 1, 2018</span>
             </div>
 
@@ -390,7 +531,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">6</span></li></ul>
     </div>
   </div>
 
